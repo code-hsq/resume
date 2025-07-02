@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: '代码商场'
-  text: '代码商场'
-  tagline: 代码商场
+  name: '个人简历'
+  text: '个人简历'
+  tagline: About Me
 ---
