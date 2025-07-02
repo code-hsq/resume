@@ -58,7 +58,7 @@ export default defineConfig({
     define: {
       _PAGES_: docsSidebarZHCN,
       _BASE_: {
-        value: '/shopbycode',
+        value: '/resume',
       },
     },
     publicDir: 'public',
@@ -75,7 +75,7 @@ export default defineConfig({
   },
   title: '个人简历',
   description: '个人简历',
-  base: '/shopbycode',
+  base: '/resume',
   ignoreDeadLinks: true,
   cleanUrls: true,
   srcExclude: ['SUMMARY.md'],
