@@ -1,31 +1,11 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme';
-import { useRouter, useData, useRoute } from 'vitepress';
-import { ref, onMounted, watch } from 'vue';
+import { ref } from 'vue';
 import Loading from './Loading.vue';
 
 const { Layout } = DefaultTheme;
 const show = ref(false);
-const router = useRouter();
-const route = useRoute();
 
-const data = useData();
-const base = _BASE_.value + '/';
-const homePath = _BASE_.value + _PAGES_[0].link;
-if (!import.meta.env.SSR) {
-  if (route.path == base) {
-    location.replace(homePath);
-  }
-}
-
-watch(route, () => {
-  if (route.path == base) {
-    // @ts-ignore
-    location.replace(homePath);
-  }
-});
-
-// console.log(data.site.value.themeConfig.sidebar);
 setTimeout(() => {
   show.value = true;
   // console.log('show');
